@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DealHunter</title>
+
+    <!-- If you're using Bootstrap 5, add its stylesheet link here, above your own stylesheet. -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Header / Nav Items -->
+    <header id="banner">
+      <span class="logo-text">DealHunter</span>
+
+      <nav>
+        <ul class="nav-list">
+          <li><button id="home-btn" class="nav-link active">Home</button></li>
+          <li>
+            <button id="profile-btn" class="nav-link">Profile</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main content -->
+    <main id="pg-main-content">
+      <!-- Home / Deals -->
+      <div id="page1">
+        <div class="section-header">
+          <h2 class="section-title">Top Deals</h2>
+
+          <!-- Search Bar -->
+          <div class="search-wrapper">
+            <input type="checkbox" id="search-toggle" />
+            <label for="search-toggle" class="search-icon-label">
+              <i class="bi bi-search"></i>
+            </label>
+            <div class="search-bar">
+              <input
+                type="search"
+                id="search-input"
+                placeholder="Search game deals..."
+              />
+              <button id="search-btn" type="button">
+                <i class="bi bi-arrow-right-circle-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div id="game-container">
+          <!-- Will be replaced by API data later -->
+          <div class="deal-card" data-game-id="271590">
+            <img
+              class="deal-thumb"
+              src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/271590/capsule_sm_120.jpg"
+              alt="Grand Theft Auto V thumbnail"
+            />
+            <div class="deal-header">
+              <span class="deal-savings">-75%</span>
+              <button class="fav-btn">
+                <i class="bi bi-heart"></i>
+              </button>
+            </div>
+            <h3 class="deal-title">Grand Theft Auto V</h3>
+            <span class="deal-store">Steam</span>
+            <div class="deal-pricing">
+              <span class="deal-original">$29.99</span>
+              <span class="deal-sale">$7.49</span>
+            </div>
+            <div class="deal-rating">Rating: 9.2</div>
+          </div>
+
+          <div class="deal-card" data-game-id="292030">
+            <img
+              class="deal-thumb"
+              src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/292030/capsule_sm_120.jpg"
+              alt="The Witcher 3 thumbnail"
+            />
+            <div class="deal-header">
+              <span class="deal-savings">-80%</span>
+              <button class="fav-btn"><i class="bi bi-heart"></i></button>
+            </div>
+            <h3 class="deal-title">The Witcher 3: Wild Hunt</h3>
+            <span class="deal-store">GOG</span>
+            <div class="deal-pricing">
+              <span class="deal-original">$39.99</span>
+              <span class="deal-sale">$7.99</span>
+            </div>
+            <div class="deal-rating">Rating: 9.8</div>
+          </div>
+
+          <div class="deal-card" data-game-id="1091500">
+            <img
+              class="deal-thumb"
+              src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1091500/capsule_sm_120.jpg"
+              alt="Cyberpunk 2077 thumbnail"
+            />
+            <div class="deal-header">
+              <span class="deal-savings">-60%</span>
+              <button class="fav-btn"><i class="bi bi-heart"></i></button>
+            </div>
+            <h3 class="deal-title">Cyberpunk 2077</h3>
+            <span class="deal-store">Steam</span>
+            <div class="deal-pricing">
+              <span class="deal-original">$59.99</span>
+              <span class="deal-sale">$23.99</span>
+            </div>
+            <div class="deal-rating">Rating: 8.5</div>
+          </div>
+
+          <div class="deal-card" data-game-id="620">
+            <img
+              class="deal-thumb"
+              src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/620/capsule_sm_120.jpg"
+              alt="Portal 2 thumbnail"
+            />
+            <div class="deal-header">
+              <span class="deal-savings">-90%</span>
+              <button class="fav-btn"><i class="bi bi-heart"></i></button>
+            </div>
+            <h3 class="deal-title">Portal 2</h3>
+            <span class="deal-store">Steam</span>
+            <div class="deal-pricing">
+              <span class="deal-original">$9.99</span>
+              <span class="deal-sale">$0.99</span>
+            </div>
+            <div class="deal-rating">Rating: 9.6</div>
+          </div>
+
+          <div class="deal-card" data-game-id="1245620">
+            <img
+              class="deal-thumb"
+              src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1245620/capsule_sm_120.jpg"
+              alt="Elden Ring thumbnail"
+            />
+            <div class="deal-header">
+              <span class="deal-savings">-50%</span>
+              <button class="fav-btn"><i class="bi bi-heart"></i></button>
+            </div>
+            <h3 class="deal-title">Elden Ring</h3>
+            <span class="deal-store">Humble Store</span>
+            <div class="deal-pricing">
+              <span class="deal-original">$59.99</span>
+              <span class="deal-sale">$29.99</span>
+            </div>
+            <div class="deal-rating">Rating: 9.4</div>
+          </div>
+
+          <div class="deal-card" data-game-id="1174180">
+            <img
+              class="deal-thumb"
+              src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1174180/capsule_sm_120.jpg"
+              alt="Red Dead Redemption 2 thumbnail"
+            />
+            <div class="deal-header">
+              <span class="deal-savings">-70%</span>
+              <button class="fav-btn"><i class="bi bi-heart"></i></button>
+            </div>
+            <h3 class="deal-title">Red Dead Redemption 2</h3>
+            <span class="deal-store">Epic Games</span>
+            <div class="deal-pricing">
+              <span class="deal-original">$59.99</span>
+              <span class="deal-sale">$17.99</span>
+            </div>
+            <div class="deal-rating">Rating: 9.0</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Favorites Page-->
+      <div id="page2" class="hidden">
+        <h2 class="section-title">Your Favorites</h2>
+        <ul id="profile-activity-list"></ul>
+      </div>
+
+      <!-- Details Overlay -->
+      <div id="details-overlay" class="hidden"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="pg-footer">
+      <p>&copy; 2026 Amicable Monye, B0098701</p>
+    </footer>
+
+    <!-- If you're using Bootstrap 5's JavaScript, add its script tag here, above your own script. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
