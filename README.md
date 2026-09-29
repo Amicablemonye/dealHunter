@@ -1,21 +1,3 @@
-# CSCI 2170 Assignment 1
-
-Fill in each section below as you work on your assignment. Replace every line in _italics_ with your own writing, and keep the headings as they are so we can find everything easily.
-
----
-
-## About you
-
-- **Full name:** AMICABLE MONYE
-- **B00/B01 number:** B00987091
-- **Dal email address:** AM877852@DAL.CA
-
-## GitLab project link
-
-_Paste the link to your GitLab a1 project folder here. This lets us verify your submission._
-
----
-
 ## Application type
 
 **Theme I chose:** News
@@ -92,7 +74,3 @@ I added the error handling inside `getFetch()` because it makes the most sense t
 
 - The application uses Bootstrap 5 via CDN for base styles and Bootstrap Icons for UI icons. All custom styling is in `css/styles.css`.
 - The detail overlay opens when clicking a game card and can be closed by clicking the X button or clicking outside the popup.
-
-## Creative Curiosity Corner (optional)
-
-_If you worked on the Creative Curiosity Corner, say so here. Your code and reflections go in the `creative-curiosity-corner` folder._
